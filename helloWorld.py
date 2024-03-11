@@ -8,5 +8,9 @@ while wantdrink.lower() != "y" and wantdrink.lower() != "n":
 if wantdrink.lower() == "y":
     drink = input("What would you like to drink? ")
     print(f"One {drink}, coming right up!")
+    # Charge the user for their drink
+    bill = len(drink) * 10
+    print(f"That will be {bill} dollars.")
 else:
     print("Very well. Have a nice day!")
+
